@@ -28,7 +28,8 @@ decrypt = ""
 for c in ciphertext:
     if c.isalpha():
         decrypt += numbers[(Letters[c] - key)%26]
-    else: decrypt += c
+    else:
+        decrypt += c
 
 print (decrypt)
 
