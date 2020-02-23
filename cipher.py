@@ -23,7 +23,7 @@ for c in plaintext.upper():
 
 print (ciphertext)
 
-reverse = ""
+decrypt = ""
 
 for c in ciphertext:
     if c.isalpha():
