@@ -1,4 +1,4 @@
-# Encrypting Hello World with Cipher Wheel
+import random
 
 """ for i in range(3):
     print ("I love Python")
@@ -10,26 +10,27 @@ Letters = dict(zip("ABCDEFGHIJKLMNOPQRSTUVWXYZ", range(26)))
 
 numbers = dict(zip(range(26), "ABCDEFGHIJKLMNOPQRSTUVWXYZ"))
 
-print (numbers)
+# print (numbers)
 
-key = 1
-plaintext = "hello world"
-ciphertext = ""
+for a in range(5):
+    key = random.randint(1, 25)
+    plaintext = "hello world"
+    ciphertext = ""
 
-for c in plaintext.upper():
-    if c.isalpha():
-        ciphertext += numbers[(Letters[c] + key)%26]
-    else: ciphertext += c
+    for c in plaintext.upper():
+        if c.isalpha():
+            ciphertext += numbers[(Letters[c] + key)%26]
+        else: ciphertext += c
 
-print (ciphertext)
+    print (ciphertext)
 
-decrypt = ""
+    decrypt = ""
 
-for c in ciphertext:
-    if c.isalpha():
-        decrypt += numbers[(Letters[c] - key)%26]
-    else:
-        decrypt += c
+    for c in ciphertext:
+        if c.isalpha():
+            decrypt += numbers[(Letters[c] - key)%26]
+        else:
+            decrypt += c
 
-print (decrypt)
+    print (decrypt)
 
