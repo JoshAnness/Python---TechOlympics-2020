@@ -12,9 +12,9 @@ numbers = dict(zip(range(26), "ABCDEFGHIJKLMNOPQRSTUVWXYZ"))
 
 # print (numbers)
 
-for a in range(5):
+for a in range(1):
     key = random.randint(1, 25)
-    plaintext = "hello world"
+    plaintext = input()
     ciphertext = ""
 
     for c in plaintext.upper():
