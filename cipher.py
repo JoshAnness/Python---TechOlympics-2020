@@ -6,4 +6,7 @@ print (range(26))
 
 Letters = dict(zip("ABCDEFGHIJKLMNOPQRSTUVWXYZ", range(26)))
 
-print (tuple(Letters))
+# print (tuple(Letters))
+
+numbers = dict(zip(range(26), "ABCDEFGHIJKLMNOPQRSTUVWXYZ"))
+
