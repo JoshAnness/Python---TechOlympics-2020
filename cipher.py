@@ -15,3 +15,10 @@ print (numbers)
 key = 1
 plaintext = "hello world"
 ciphertext = ""
+
+for c in plaintext.upper():
+    if c.isalpha():
+        ciphertext += numbers[(Letters[c] + key)%26]
+    else: ciphertext += c
+
+print (ciphertext)
