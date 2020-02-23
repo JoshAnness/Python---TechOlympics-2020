@@ -10,3 +10,8 @@ Letters = dict(zip("ABCDEFGHIJKLMNOPQRSTUVWXYZ", range(26)))
 
 numbers = dict(zip(range(26), "ABCDEFGHIJKLMNOPQRSTUVWXYZ"))
 
+print (numbers)
+
+key = 1
+plaintext = "hello world"
+ciphertext = ""
