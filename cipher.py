@@ -1,8 +1,8 @@
 # Encrypting Hello World with Cipher Wheel
 
-for i in range(3):
+""" for i in range(3):
     print ("I love Python")
-print (range(26))
+print (range(26)) """
 
 Letters = dict(zip("ABCDEFGHIJKLMNOPQRSTUVWXYZ", range(26)))
 
@@ -27,7 +27,7 @@ reverse = ""
 
 for c in ciphertext:
     if c.isalpha():
-        reverse += numbers[(Letters[c] - key)%26]
-    else: reverse += c
+        decrypt += numbers[(Letters[c] - key)%26]
+    else: decrypt += c
 
-print (reverse)
+print (decrypt)
