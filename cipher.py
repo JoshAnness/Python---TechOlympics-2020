@@ -22,3 +22,12 @@ for c in plaintext.upper():
     else: ciphertext += c
 
 print (ciphertext)
+
+reverse = ""
+
+for c in ciphertext:
+    if c.isalpha():
+        reverse += numbers[(Letters[c] - key)%26]
+    else: reverse += c
+
+print (reverse)
